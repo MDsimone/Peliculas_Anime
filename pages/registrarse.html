@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse | CAC-MOVIES</title>
+    <!--aos animaciones-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/estilos_boostrap.css">
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header >
+        <nav class="navbar navbar-expand-lg navbar-dark bgMenu">
+            <div class="container">
+              <a class="navbar-brand" href="../index.html">
+                <i class="fas fa-film" aria-hidden="true"></i>
+                <span>CAC-Movies</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link active " aria-current="page" href="../index#tendencias">Tendencias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active " href="./registrarse.html">Registrarse</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active iniSesion" href="./iniciosesion.html">Iniciar Sesión</a>
+                  </li>
+                </ul>
+               
+              </div>
+            </div>
+          </nav>
+      
+    </header>
+    <main class="row text-center justify-content-center bgRegistro" >
+      <section  data-aos="zoom-in"  data-aos-duration="1000" class="col-8 col-md-4 mt-2 ">
+        <form class="form-signin alert alert-dark" role="alert" action="" method="post">
+            <h2 class="h3 mb-3 font-weight-normal">Registro</h2>
+            <div class="form-label-group">
+                <input type="text" class="form-control " id="inputNombre" placeholder="Nombre" required  name="nombre">
+                <div id="nombreError" class="error-message"></div>
+              </div>
+            <div class="form-label-group"> 
+                <input type="text" class="form-control mt-2" id="inputApellido" placeholder="Apellido" required name="apellido">
+                <div id="apellidoError" class="error-message"></div>
+              </div>
+            <div class="form-label-group">
+                <input type="email" class="form-control mt-2" id="inputEmail" placeholder="Email" required  name="email">
+                <div id="mailError" class="error-message"></div>
+            </div>
+            <div class="form-label-group">
+                <input type="password" class="form-control mt-2" id="inputPassword" placeholder="Contraseña" required  name="password">
+                <div id="passError" class="error-message"></div>
+              </div>
+            <div class="form-label-group">
+                <input type="date" class="form-control mt-2" placeholder="Fecha de Nacimiento (dd/mm/aaaa)" required id="fechaNacimiento" name="fechaNacimiento">
+                <div id="fNacimientoError" class="error-message"></div>
+              </div>
+            <div class="form-label-group mt-2">
+                <select class="form-control" name="pais" id="pais">
+                    <option value="">País</option>
+                    <option value="AR">Argentina</option>
+                    <option value="BO">Bolivia</option>
+                    <option value="BR">Brasil</option>
+                    <option value="CH">Chile</option>
+                    <option value="CO">Colombia</option>
+                    <option value="EC">Ecuador</option>
+                    <option value="PY">Paraguay</option>
+                    <option value="PE">Perú</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="VE">Venezuela</option>
+                </select>
+                <div id="paisError" class="error-message"></div>
+            </div>
+            <div  class="checkbox mb-3" >
+                <input class="check" type="checkbox" id="terminos">
+                <label class="textoCheck" for="terminos">Acepto términos y condiciones</label>
+            </div>
+            <div>
+              <button class="btn btn-lg btn-primary btn-block" type="submit">Registrarse</button>
+            </div>
+           
+            <div > 
+                <a class="ayuda" href="#">Necesitas ayuda?</a>
+            </div>
+        </form>
+      </section>
+  
+    </main>
+  
+    <footer class="container-fluid">
+        <nav class="navegacion h-100">
+            <ul class="h-100 d-flex flex-column flex-md-row sinLista gap-3 justify-content-evenly align-items-center">
+                <li class="listaItem"><a class="text-white fs-6 text-decoration-none" href="">Términos y condiciones</a></li>
+                <li class="listaItem"><a class="text-white fs-6 text-decoration-none" href="">Preguntas frecuentes</a></li>
+                <li class="listaItem"><a class="text-white fs-6 text-decoration-none" href="">Ayuda</a></li>
+                <li class="listaItem"><a class="text-white fs-6 text-decoration-none administradorPeliculas" href="">Administrador Peliculas</a></li>
+            </ul>
+        </nav>
+    </footer >
+   <script src="../js/bootstrap.bundle.min.js"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+   AOS.init();
+   </script>
+</body>
+</html>

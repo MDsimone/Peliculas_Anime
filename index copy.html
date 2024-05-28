@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAC-MOVIES</title>
+    <script src ="http://kit.fontawesome.com/cbb236219.js" crosorigin="anonymouse"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/reset.css" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+     <!--aos animaciones-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> 
+     
+</head>
+<body>
+  
+    <header class="header">
+        <nav class="navegacion">
+            <a class="Logo" href="#">
+                <i class="fas fa-film" aria-hidden="true"></i>
+                <span>CAC-Movies</span></a>
+            </a>
+            <ul class="listaNav">
+                <li class="menu"><a class="linkNav" href="">Tendencias</a></li>
+                <li class="menu"><a class="linkNav" href="./pages/registrarse.html">Registrarse</a></li>
+                <li class="menu"><a class="linkNav iniSesion" href="./pages/iniciosesion.html">Iniciar Sesión</a></li>
+            </ul> 
+        </nav>
+    </header>
+    <main class="main">
+        <section class="sectionPrincipal">
+            <h1 class="titPrincipal">Películas y series ilimitadas <br> en un solo lugar</h1>
+            <h2 class="subtituloPrincipal">Disfruta donde y cuando quieras. <br> Cancelar en cualquier momento.</h2>
+            <a class="botonRegistrar" href="./pages/registrarse.html">Registrate</a>
+        </section>
+        <section class="sectionBuscador">
+            <h2 class="titSectionBuscador" data-aos="flip-up" data-aos-duration="1000">¿Qué estas buscando para ver?</h2>         
+            <form class="buscadorPeliculas">
+                <input class="inputBuscador" type="text" placeholder="Buscar..."/>
+                <input class="botonBuscador" type="submit" value="Buscar">
+            </form>
+      
+           
+
+        </section>
+        <hr><!-- data-aos=»fade-up». Tipo de animación a aplicar; data-aos-offset retardo; data-aos-duration duracion-->
+        <section data-aos="zoom-in" data-aos-offset="400" data-aos-delay="100" data-aos-duration="1000" class="SectionPTendencia">
+            <h3 class="tituloSection">Las tendencias de hoy</h3>
+            <div class="peliculas">
+
+
+                
+                <!--
+                <a href="./pages/detalle.html">
+                    <div class="pelicula">
+                    
+                        <img class="imgTendencia" src="./assets/img/portadas/totoro.jpg" alt="Mi Vecino Totoro" loading="lazy">
+                        
+                        <div class="titPelicula">
+                            <h4>Mi Vecino Totoro</h4>
+                        </div>
+                    
+                    </div>
+                </a>
+                <a href="./pages/detalle.html">
+                    <div class="pelicula">
+                    
+                        <img class="imgTendencia" src="./assets/img/portadas/yourName.jpg" alt="Your Name" loading="lazy">
+                       
+                        <div class="titPelicula">
+                            <h4>Your Name</h4>
+                        </div>
+                    
+                    </div>
+                </a>
+                <a href="./pages/detalle.html">
+                    <div class="pelicula">
+                        
+                        <img class="imgTendencia" src="./assets/img/portadas/MyMadness.jpg" alt="My Madness" loading="lazy">
+                        
+                        <div class="titPelicula">
+                            <h4>My Madness</h4>
+                        </div>
+                    
+                    </div>
+                </a>
+                <a href="./pages/detalle.html">
+                    <div class="pelicula">
+                        
+                        <img class="imgTendencia" src="./assets/img/portadas/Mak.jpg" alt="SuZume no Tajimari" loading="lazy">
+                        
+                        <div class="titPelicula">
+                                <h4>SuZume no Tajimari</h4>
+                        </div>
+                    </div>
+                   
+                </a>
+                <a href="./pages/detalle.html">
+                    <div class="pelicula">
+                        
+                        <img class="imgTendencia" src="./assets/img/portadas/LucesEnElCielo.jpg" alt="Luces en el Cielo" loading="lazy">
+                        
+                        <div class="titPelicula">
+                            <h4>Luces en el Cielo</h4>
+                        </div>
+                    
+                    </div>
+                </a>
+                <a href="./pages/detalle.html">
+                    <div class="pelicula">
+                        
+                        <img class="imgTendencia" src="./assets/img/portadas/Chighiro.jpg" alt="El viaje de Chighiro" loading="lazy">
+                        
+                        <div class="titPelicula">
+                            <h4>El viaje de Chighiro</h4>
+                        </div>
+                        
+                    </div>
+                </a>
+                <a href="./pages/detalle.html">
+                    <div class="pelicula">
+                        
+                        <img class="imgTendencia" src="./assets/img/portadas/AttackOnTitan.jpg" alt="Attack On Titan" loading="lazy">
+                       
+                        <div class="titPelicula">
+                            <h4>Attack On Titan</h4>
+                        </div>
+                    
+                    </div>
+                </a>
+                <a href="./pages/detalle.html">
+                    <div class="pelicula">
+                        
+                        <img class="imgTendencia" src="./assets/img/portadas/AtackOnTitanII.jpg" alt="Attack On Titan 2" loading="lazy">
+                        
+                        <div class="titPelicula">
+                            <h4>Attack On Titan II</h4>
+                        </div>
+                    
+                    </div>
+                </a>
+                 -->
+            </div>
+            <button class="boton">Anterior</button>  
+            <button class="boton">Siguiente</button>
+        </section>
+        <hr>
+        <!-- data-aos=»fade-up». Tipo de animación a aplicar; data-aos-offset retardo; data-aos-duration duracion-->
+        <section data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="2000" class="SectionPAclamadas">
+            <h3 class="tituloSection">Las más aclamadas</h3>
+             <div class="Paclamadas">
+                <div class="Paclamada">
+                    <img class="imgAclamada" src="./assets/img/aclamadas/Akira 1.jpg" alt="Akira I" loading="lazy">
+                </div>
+                <div class="Paclamada">
+                    <img class="imgAclamada" src="./assets/img/aclamadas/Kimetsu No Yaiba_Mugen Ressha-Hen.jpg" alt="Kimetsu No Yaiba_Mugen Ressha-Hen" loading="lazy">
+                </div>
+                <div class="Paclamada">
+                    <img class="imgAclamada" src="./assets/img/aclamadas/laChicaQueSaltabaATravezDelTiempo.jpg" alt="la Chica Que Saltaba A Travez Del Tiempo" loading="lazy">
+                </div>
+                <div class="Paclamada">
+                    <img class="imgAclamada" src="./assets/img/aclamadas/laTumbaDeLaLuciernagas.jpg" alt="la Tumba De La Luciernagas" loading="lazy">
+                </div>
+                <div class="Paclamada">
+                    <img class="imgAclamada" src="./assets/img/aclamadas/My Hero Academia.jpg" alt="My Hero Academia" loading="lazy">
+                </div>
+                <div class="Paclamada">
+                    <img class="imgAclamada" src="./assets/img/aclamadas/Naruto.jpg" alt="Naruto" loading="lazy">
+                </div>
+                <div class="Paclamada">
+                    <img class="imgAclamada" src="./assets/img/aclamadas/naruto_shippuden.webp" alt="naruto_shippuden" loading="lazy">
+                </div>
+                <div class="Paclamada">
+                    <img class="imgAclamada" src="./assets/img/aclamadas/princessMononoke.jpg" alt="princess Mononoke" loading="lazy">
+                </div>
+                <div class="Paclamada">
+                    <img class="imgAclamada" src="./assets/img/aclamadas/unaCartaParaMomo.jpg" alt="una Carta Para Momo" loading="lazy">
+                </div>
+                <div class="Paclamada">
+                    <img class="imgAclamada" src="./assets/img/aclamadas/Viaje a Agartha.avif" alt="Viaje a Agartha" loading="lazy">
+                </div>
+                <div class="Paclamada">
+                    <img class="imgAclamada" src="./assets/img/aclamadas/yourName.jpg" alt="your Name" loading="lazy">
+                </div>
+               
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <nav class="navegacion">
+            <ul class="listaNav">
+                <li class="listaItem"><a class="linkNav" href="">Términos y condiciones</a></li>
+                <li class="listaItem"><a class="linkNav" href="">Preguntas frecuentes</a></li>
+                <li class="listaItem"><a class="linkNav" href="">Ayuda</a></li>
+                <li class="listaItem"><a class="linkNav adminPeliculas" href="">Administrador Peliculas</a></li>
+            </ul>
+        </nav>
+        <a href="#main" class="flechaArriba">
+            <img src="./assets/img/flecha-hacia-arriba.png" alt="arriba">
+        </a>
+    </footer>
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | CAC-MOVIES</title>
+    <!--aos animaciones-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/estilos_boostrap.css">
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="../js/validar.js"></script>
+</head>
+<body>
+    <header >
+        <nav class="navbar navbar-expand-lg navbar-dark bgMenu">
+            <div class="container">
+              <a class="navbar-brand" href="../index.html">
+                <i class="fas fa-film" aria-hidden="true"></i>
+                <span>CAC-Movies</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link active " aria-current="page" href="../index#tendencias">Tendencias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active " href="./registrarse.html">Registrarse</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active iniSesion" href="./iniciosesion.html">Iniciar Sesión</a>
+                  </li>
+                </ul>
+               
+              </div>
+            </div>
+          </nav>
+      
+    </header>
+    <main class="row text-center justify-content-center bgInicio" >
+      <section  data-aos="zoom-in"  data-aos-duration="1000" class="col-8 col-md-4 seccionRegistrarse mt-5 ">
+       
+        <form id="formLogin" class="form-signin alert alert-dark" role="alert" action="" method="post">
+            <h2 class="h3 mb-3 font-weight-normal">Ingresar</h2>
+            
+            <div class="form-label-group">
+                <input type="email" class="form-control mt-2" id="inputEmail" placeholder="Email"   name="email">
+                <div id="emailError" class="error-message"></div>
+            </div>
+
+
+            <div class="form-label-group">
+                <input type="password" class="form-control mt-2" id="password" placeholder="Contraseña"   name="password">
+                <div id="passError" class="error-message"></div>
+              </div>
+
+            <div>
+              <button class="btn btn-lg btn-primary btn-block mt-4" type="submit">Ingresar</button>
+            </div>
+           
+            <div class="mt-4"> 
+                <a class="ayuda" href="#">Necesitas ayuda?</a>
+            </div>
+        </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>
+ <!--   <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("loginForm").addEventListener("submit", (event) => {
+                event.preventDefault();
+                validarCampos();
+            });
+
+            document.querySelectorAll(".form-control").forEach((input) => {
+                input.addEventListener("keydown", (event) => {
+                    if (event.key === "Tab" || event.key === "Enter") {
+                        event.preventDefault();
+                        validarCampos();
+                    }
+                });
+            });
+        });
+
+        const validarCampos = () => {
+            resetErrorMessages();
+            const email = document.getElementById("inputEmail").value.trim();
+            const password = document.getElementById("password").value.trim();
+            let isValid = true;
+
+           
+            if (!isValidEmail(email)) {
+                displayErrorMessage("emailError", "Por favor ingrese un correo electrónico válido.");
+                document.getElementById("inputEmail").classList.add("is-invalid");
+                isValid = false;
+            } else {
+                document.getElementById("inputEmail").classList.remove("is-invalid");
+            }
+
+            if (password.length < 8) {
+                displayErrorMessage("passError", "La contraseña debe tener al menos 8 caracteres.");
+                document.getElementById("password").classList.add("is-invalid");
+                isValid = false;
+            } else {
+                document.getElementById("password").classList.remove("is-invalid");
+            }
+
+            if (isValid) {
+                alert("¡Formulario enviado correctamente!");
+            }
+        };
+
+        const isValidEmail = (email) => {
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailPattern.test(email);
+        };
+
+        const displayErrorMessage = (elementId, message) => {
+            const errorElement = document.getElementById(elementId);
+            errorElement.innerText = message;
+        };
+
+        const resetErrorMessages = () => {
+            const errorElements = document.querySelectorAll(".error-message");
+            errorElements.forEach((element) => {
+                element.innerText = "";
+            });
+        };
+    </script> -->
+      </section>
+     
+    </main>
+  
+    <footer class="container-fluid">
+        <nav class="navegacion h-100">
+            <ul class="h-100 d-flex flex-column flex-md-row sinLista gap-3 justify-content-evenly align-items-center">
+                <li class="listaItem"><a class="text-white fs-6 text-decoration-none" href="">Términos y condiciones</a></li>
+                <li class="listaItem"><a class="text-white fs-6 text-decoration-none" href="">Preguntas frecuentes</a></li>
+                <li class="listaItem"><a class="text-white fs-6 text-decoration-none" href="">Ayuda</a></li>
+                <li class="listaItem"><a class="text-white fs-6 text-decoration-none administradorPeliculas" href="">Administrador Peliculas</a></li>
+            </ul>
+        </nav>
+    </footer >
+   <script src="../js/bootstrap.bundle.min.js"></script>
+
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+   AOS.init();
+   </script>
+    
+</body>
+</html>

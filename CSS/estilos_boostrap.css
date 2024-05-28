@@ -1,0 +1,99 @@
+:root{
+    --main-color: #f3f3f3;
+
+}
+@font-face {
+    font-family: "Poppins", sans-serif;
+    src: url('../assets/fonts/Poppins/OFL.txt') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif; 
+    background-image: linear-gradient(to right, #3b464a, #3f4f55, #445861, #49616d, #4e6a79, #4a7187, #477796, #457da5, #3981ba, #3384ce, #3986e1, #4b86f3);
+    color: var(--main-color);
+}
+header{
+    background-image: linear-gradient(to right, #3b464a, #3f4f55, #445861, #49616d, #4e6a79, #4a7187, #477796, #457da5, #3981ba, #3384ce, #3986e1, #4b86f3);
+    /*página https://mycolor.space/gradient?ori=to+right&hex=%230C83EF&hex2=%23B4FBFB&sub=1*/
+    font-size: 1.1rem;
+    font-weight: 700;/*negrita*/
+    height: 12vh;
+    nav{
+        height:100%;
+            .iniSesion{
+                width: 100%;
+                padding: 1rem 0.5 rem;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #031156;
+                border: none;
+                border-radius: 5px; /*para redondear las puntas*/
+                  }      
+    }
+}
+.error-message {
+    color: rgb(164, 13, 13);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+footer{
+    height: 10vh;
+    color: var(--main-color);
+    background-image: linear-gradient(to right, #3b464a, #3f4f55, #445861, #49616d, #4e6a79, #4a7187, #477796, #457da5, #3981ba, #3384ce, #3986e1, #4b86f3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
+}
+@media (max-width: 576px){
+    header{
+        height: initial;
+        nav{
+            height: initial;          
+        }
+    }
+    footer{
+        height: initial;
+        nav{
+            height: initial;
+            a{
+                font-size: 0.8rem;
+            }
+            
+        }
+    }
+}
+.bgMenu{
+  background-color: var(--third-color);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/*detalle*/
+.fotoDetalle{
+
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.628);
+
+}
+
+.trailerMedidas{
+    height: 315px;
+}
+.sinLista{
+    list-style: none;
+}
+/*Registro*/
+.bgRegistro{
+    background-image: url(../assets/img/bg-register.jpg);
+
+}
+/*Inicio*/
+.bgInicio{
+    background-image: url(../assets/img/bg-register.jpg);
+    height: 75vh;
+}

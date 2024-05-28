@@ -1,0 +1,533 @@
+
+
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url('../assets/fonts/Poppins/OFL.txt') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+  * {  
+    /*font-family: 'josefin_sansthin', sans-serif;*/
+    font-family: "Poppins", sans-serif; 
+
+  
+    }
+    body {
+      background-image: linear-gradient(to right, #3b464a, #3f4f55, #445861, #49616d, #4e6a79, #4a7187, #477796, #457da5, #3981ba, #3384ce, #3986e1, #4b86f3);
+    }
+    .header{
+      background-image: linear-gradient(to right, #3b464a, #3f4f55, #445861, #49616d, #4e6a79, #4a7187, #477796, #457da5, #3981ba, #3384ce, #3986e1, #4b86f3);
+      /*página https://mycolor.space/gradient?ori=to+right&hex=%230C83EF&hex2=%23B4FBFB&sub=1*/
+      font-size: 1.2rem;
+      font-weight: 700;/*negrita*/
+       position: sticky; /*para que combinada con el valor de la posición (top:0;) se quede fijo y se mueva el resto de la página*/
+       top:0;
+       z-index:10;/*Para que quede en la capa superior por arriba del resto*/
+       box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+       .navegacion{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left:40px;
+        margin-right: 40px;
+        padding: 1.5rem 0;               
+             .Logo{
+                    font-size: 1,5rem;
+                    color:azure;
+                    text-decoration: none;
+                      }
+                        .listaNav { 
+                          text-align: right;
+                          list-style: none;
+                          color:azure;
+                        .menu{ 
+                            display: inline;
+
+                            .linkNav {
+                            font-size: 1.2rem;
+                            text-decoration: none;
+                            color:azure; 
+                            padding: 0.5rem 1rem;
+                            padding: 0.2rem; 
+                            transition: transform 0.3s, box-shadow 0.3s;
+                            &:hover {
+                              transform: scale(0.95);
+                              background-color: #031d79a6;
+                              box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+                              border-radius: 5px;
+
+                                }
+                              }
+                            .linkNav.iniSesion{
+                              width: 40%;
+                              padding: 1.5rem 1 rem;
+                              font-weight: bold;
+                              color: #ffffff;
+                              background-color: #031156;
+                              border: none;
+                              border-radius: 5px; /*para redondear las puntas*/
+                              transition: transform 0.3s, box-shadow 0.3s;
+                              &:hover {
+                                  background-color: #66bbf4;
+                                  transform: scale(0.95);
+                                  box-shadow: 0 0 10px rgba(132, 236, 243, 0.3);
+                              }
+                                }   
+                              }
+                            }   
+                            
+
+        }
+    }
+    hr{
+      width:80%;
+       border-color: #3384ce;
+    }
+/*Estilos para el Header tables y mobil*/
+
+@media (max-width: 768px) {
+  .header{
+      height: initial;
+      .navegacion{
+          margin-left:10px;
+          margin-right: 10px;
+          flex-direction: column;
+          row-gap: 20px;
+          .Logo{
+              font-size: 1.2rem;
+              font-weight:700;
+          }
+          .listaNav{
+             
+              padding:initial;
+              .menu{
+                  .linkNav{
+                      font-weight: 400;
+                      margin-right: initial;
+                      font-size: 1rem;
+                      padding: 0.2rem; 
+                      transition: transform 0.3s, box-shadow 0.3s;
+                      &:hover {
+                        transform: scale(0.95);
+                        background-color: #031d79a6;
+                        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+                        border-radius: 5px;
+                      }
+                  }
+
+                  .linkNav.iniSesion{
+                    width: 40%;
+                    padding: 1.5rem 1 rem;
+                    font-weight: bold;
+                    color: #ffffff;
+                    background-color: #031156;
+                    border: none;
+                    border-radius: 5px; /*para redondear las puntas*/
+                    transition: transform 0.3s, box-shadow 0.3s;
+                    &:hover {
+                        background-color: #66bbf4;
+                        transform: scale(0.95);
+                        box-shadow: 0 0 10px rgba(132, 236, 243, 0.3);
+                    }
+
+                  } 
+              }
+          }
+      }
+  }
+}
+
+/*Estilos MAIN escritorio*/
+
+   .main{
+
+      .sectionPrincipal{
+       /* background:linear-gradient(to right, #393838,#2b2828);*/
+        background-image: linear-gradient(to right, #3938387b,#2b282872), url('../assets/img/fondo.avif');
+        background-size:cover;
+       /* background-repeat: no-repeat;*/
+        background-position: right;
+        display: flex;
+        flex-direction: column;
+        height: 100vh; /* 1vh = 1% del tamaño total del navegador*/
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .titPrincipal{
+          font-size: 4rem;
+          color: azure;
+          font-weight: 700;/*negrita*/
+          margin-bottom: 2rem;
+        }
+        .subtituloPrincipal{
+          font-size: 2rem;
+          font-weight: 700;/*negrita*/
+          color: azure;
+          margin-bottom: 2rem;
+        }
+        .botonRegistrar{
+          width: 10%;
+          padding: 1rem 0.4rem;
+          font-size: 1.2rem;
+          font-weight: bold;
+          text-align: center;
+          color: #ffffff;
+          background-color: #3d5cf6;
+          border: none;
+          border-radius: 5px; /*para redondear las puntas*/
+          transition: transform 0.3s, box-shadow 0.3s;
+          &:hover {
+              background-color: #66bbf4;
+              transform: scale(0.95);
+              box-shadow: 0 0 10px rgba(132, 236, 243, 0.3);
+          }
+        }
+      
+      }
+
+      .sectionBuscador{
+        display: flex;
+        flex-direction: column;
+        height: 60vh;/* 1vh = 1% del tamaño total del navegador*/
+        justify-content: center;
+        align-items: center;
+        color: azure;
+        
+          .titSectionBuscador{
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+          }
+          .inputBuscador{
+          background-color: #edeef4;
+          border:none;
+          border-radius: 20px; /*para redondear las puntas*/
+          font-size: 1,2rem;
+          padding: 2px 20px;  
+          width: 400px; 
+          height: 40px;
+          margin:20px 0px;
+            }
+          .botonBuscador{
+            box-sizing: content-box;
+            margin-top:50px;
+            padding: 0.5rem 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+            color: #ffffff;
+            background-color: #3d5cf6;
+            border:2px solid#edeef4;
+            border-radius: 20px; /*para redondear las puntas*/
+            transition: transform 0.3s, box-shadow 0.3s;
+            &:hover {
+                background-color: #66bbf4;
+                transform: scale(0.95);
+                box-shadow: 0 0 10px rgba(132, 236, 243, 0.3);
+            }
+          }  
+      }
+      
+     .SectionPTendencia{
+      margin: 0% auto;
+      width: 80%;
+      text-align: center;
+      margin-top: 10px;
+        .tituloSection {
+          font-size:3rem ;
+          font-weight:700 ;
+          color: #edeef4;
+          margin-bottom: 30px;
+        }
+        .peliculas{
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap:60px;/*tamaño de las canaletas, que es el espacio entre filas y columnas 
+          dentro de la cuadrícula*/
+          a{
+            text-decoration: none;
+            color: azure;
+            .pelicula{
+              position: relative;
+              overflow: hidden;
+              border-radius: 10px;
+              width:200px;
+              height: 300px;
+              transition: all 0.5s ease;
+              .imgTendencia{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+              }
+              .TitPelicula{
+                z-index: 2;
+                position: absolute;
+                text-align: center;
+                top: 50%;
+                left: 50%;
+                max-width: 20rem;
+                width: 100%;
+                transform: translateY(-50%) translateX(-50%);
+                h4 {
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    opacity: 0;
+                    margin-bottom: 0.5rem;
+                    letter-spacing: 0.1rem;
+                    transition: opacity 0.5s ease-in-out;
+
+                }
+              }
+            }
+          }
+        }
+
+        .boton{
+          border: 1px solid white;
+          box-sizing: content-box;
+          margin-top:50px;
+          margin-left:20px;
+          background-color:#3d5cf6;
+          color: #ffffff;
+          padding: 0.5rem 1rem;
+          border-radius: 10px;
+          font-size: 1rem;
+          font-weight: 500;
+          text-decoration: none;
+          margin-bottom:60px;
+          transition: transform 0.3s, box-shadow 0.3s;
+             &:hover {
+                 background-color: #66bbf4;
+                 transform: scale(0.95);
+                 box-shadow: 0 0 10px rgba(132, 236, 243, 0.3);
+             }
+          }
+
+      } 
+    .SectionPAclamadas{
+      width:80%;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      .tituloSection {
+        font-size:3rem ;
+        font-weight:700 ;
+        color: #edeef4;
+        margin-bottom: 30px;
+        }
+      .Paclamadas{
+
+        width: 100%;
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        justify-content: flex-start;/*actua en el eje contrario al contenedor*/
+        align-items: flex-start;
+       
+
+        .Paclamada{
+          width: 150px;
+          min-width: 150px;
+          font-size: 20px;
+          margin-left: 60px; 
+          flex-direction: column;
+          justify-content:space-between;
+       
+
+          .imgAclamada{
+            border-radius: 5%;
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        }
+
+      }
+    }  
+
+   }/*Fin Main*/
+   
+/*estilos para main Tables, celulcares*/
+@media (max-width: 768px) {
+  .main{
+      .sectionPrincipal{
+          height: 60vh;
+          .titPrincipal{
+              font-size: 2.5rem;
+          }
+          .subtituloPrincipal{
+              font-size: 1.5rem;
+          }
+          .botonRegistrar{
+            width: 30%;
+            padding: 1rem 1 rem;
+              font-size: 1rem;
+             /* padding: 0.4rem 1.5rem; */
+              font-size: 1rem;
+          }
+      }
+      .sectionBuscador{
+          height: 30vh;
+          .titSectionBuscador{
+              font-size: 1.6rem;
+          }
+          .buscadorPeliculas{
+              .inputBuscador{
+                  font-size: 1rem;
+                  height: 40px;
+                  width: 300px;
+              }
+              .botonBuscador{
+                  height: 40px;
+                  padding:0 15px;
+                  font-size: 1rem;
+              }
+          }
+      }
+      .SectionPTendencia{
+          width: 95%;
+          .tituloSection{
+              font-size: 2rem;
+          }
+          .peliculas{
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            
+              a{
+                  width: 70%;
+                  .pelicula{
+                     margin: auto;
+                      width: 70%;
+                      height: 500px;
+                     
+                      .titPelicula{
+                          h4 {
+                              font-size: 1rem;
+                          }
+                      }
+                     
+                  }
+              }
+            
+             
+          }
+          .boton{
+              padding: 0.8rem 0.8rem;
+              font-size: 0.8rem;
+          }
+      }
+      .SectionPAclamadas{
+          .tituloSection{
+              font-size: 2rem;
+          }
+          .Paclamadas{
+              .paclamada{
+                  width: 150px;
+                  min-width: 150px;
+                  font-size: 15px;
+                  margin-left: 20px;
+                  .imgAclamada{
+                      width: 90%;
+                      height: 90%;
+                  }
+              }
+          }
+      }
+  }
+}/*fin @media MAIN*/
+
+   /*Estilos para el footer*/
+   .footer{ 
+    background-image: linear-gradient(to right, #3b464a, #3f4f55, #445861, #49616d, #4e6a79, #4a7187, #477796, #457da5, #3981ba, #3384ce, #3986e1, #4b86f3);
+    color:#ffffff;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    .listaNav{
+        list-style: none;
+        display: flex;
+        align-items: center;
+       
+        .listaItem{
+            margin-left:20px;
+            .linkNav{
+                text-decoration: none;
+                color:#ffffff;
+                font-weight: 700;
+                font-size: 1rem;
+                margin-left: 10px;
+                transition: transform 0.3s, box-shadow 0.3s;
+                &:hover {
+                  transform: scale(0.95);
+                  background-color: #031d79a6;
+                  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+                  border-radius: 5px;
+
+                    }
+            }
+            .adminPeliculas{
+                background-color: #181419;
+                color: white;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+                transition: transform 0.3s, box-shadow 0.3s;
+                &:hover {
+                    background-color: #66bbf4;
+                    transform: scale(0.95);
+                    box-shadow: 0 0 10px rgba(132, 236, 243, 0.3);
+                }
+
+            }
+        }
+    }
+    .flechaArriba{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        color: white;
+        cursor: pointer;
+    }
+}
+/*ESTILOS FOOTER CELULAR Y TABLET CHICA*/
+@media (max-width: 768px) {
+    .footer{
+        height: initial;
+        padding-top:15px;
+        padding-bottom: 20px;
+        .listaNav{
+            flex-direction: column;
+           
+            row-gap: 15px;
+            .listaItem{
+                
+                .linkNav{
+                    font-size: 0.8rem;
+                    transition: transform 0.3s, box-shadow 0.3s;
+                    &:hover {
+                      transform: scale(0.95);
+                      background-color: #031d79a6;
+                      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+                      border-radius: 5px;
+
+                        }
+                }
+                .adminPeliculas{
+                    padding: 0.5rem 0.8rem;
+                    transition: transform 0.3s, box-shadow 0.3s;
+                    &:hover {
+                        background-color: #66bbf4;
+                        transform: scale(0.95);
+                        box-shadow: 0 0 10px rgba(132, 236, 243, 0.3);
+                    }
+                }
+            }
+        }
+    }
+}
