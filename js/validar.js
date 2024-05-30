@@ -19,7 +19,8 @@ const validarCampos = () => {
     resetErrorMessages();
     const email = document.getElementById("inputEmail").value.trim();
     const password = document.getElementById("password").value.trim();
-   
+
+
 
    
     if (!isValidEmail(email)) {
@@ -39,8 +40,7 @@ const validarCampos = () => {
         document.getElementById("password").classList.remove("is-invalid");
         document.getElementById("password").classList.add("is-valid");
     }
-
-
+ 
 };
 
 const isValidEmail = (email) => {

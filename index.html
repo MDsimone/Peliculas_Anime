@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="CSS/reset.css" type="text/css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
-     <!--aos animaciones-->
+ 
+    <!--aos animaciones-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> 
      
 </head>
@@ -29,7 +30,7 @@
             </ul> 
         </nav>
     </header>
-    <main class="main">
+    <section class="main">
         <section class="sectionPrincipal">
             <h1 class="titPrincipal">Películas y series ilimitadas <br> en un solo lugar</h1>
             <h2 class="subtituloPrincipal">Disfruta donde y cuando quieras. <br> Cancelar en cualquier momento.</h2>
@@ -41,10 +42,19 @@
                 <input class="inputBuscador" type="text" placeholder="Buscar..."/>
                 <input class="botonBuscador" type="submit" value="Buscar">
             </form>
-      
-           
-
         </section>
+        <hr>
+         <section class="sectionClima">   
+                
+            <ul>
+                <li class="imagen"> <img id="icono"  alt="icono del clima" width="50px" height="50px"> </li> 
+                <li id="temperatura">---</li>
+                <li id="summary">---</li>
+                <li id="lugar">---</li>
+                
+            </ul>
+            
+         </section>  
         <hr><!-- data-aos=»fade-up». Tipo de animación a aplicar; data-aos-offset retardo; data-aos-duration duracion-->
         <section data-aos="zoom-in" data-aos-offset="400" data-aos-delay="100" data-aos-duration="1000" class="SectionPTendencia">
             <h3 class="tituloSection">Las tendencias de hoy</h3>
@@ -198,6 +208,8 @@
             <img src="./assets/img/flecha-hacia-arriba.png" alt="arriba">
         </a>
     </footer>
+       <!--Clima-->
+       <script src="./js/clima.js"></script>
 </body>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
