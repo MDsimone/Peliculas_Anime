@@ -73,7 +73,10 @@ document.addEventListener('DOMContentLoaded',() => {
                     sumary.textContent = "neblina";
                 }
                 
-
+                
+                if(codigoTiempo === "overcast clouds"){
+                    sumary.textContent = "nubes cubiertas";
+                }
              }
 
         });
