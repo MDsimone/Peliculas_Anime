@@ -266,7 +266,7 @@
           dentro de la cuadrícula*/
           a{
             text-decoration: none;
-            color: azure;
+            color: rgba(240, 255, 255, 0.952);
             .pelicula{
               position: relative;
               overflow: hidden;
@@ -279,9 +279,9 @@
                 height: 100%;
                 object-fit: cover;
                 border-radius: 10px;
-              }
+                        }
               .TitPelicula{
-                z-index: 2;
+                z-index: 10;
                 position: absolute;
                 text-align: center;
                 top: 50%;
@@ -367,6 +367,66 @@
 
       }
     }  
+    .SectionPLiveAction{
+      margin: 0% auto;
+      width: 80%;
+      text-align: center;
+      margin-top: 10px;
+        .tituloSection {
+          font-size:3rem ;
+          font-weight:700 ;
+          color: #edeef4;
+          margin-bottom: 30px;
+        }
+        .LiveAction{
+    
+        #peliculasLive{
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap:60px;/*tamaño de las canaletas, que es el espacio entre filas y columnas 
+          dentro de la cuadrícula*/
+    
+          a{
+            text-decoration: none;
+            color: azure;
+            .live{
+              position: relative;
+              overflow: hidden;
+              border-radius: 10px;
+              width:200px;
+              height: auto; /* Ajusta la altura del contenedor automáticamente para que coincida con la de la imagen */
+              transition: all 0.5s ease;
+              .imglive{
+                max-width: 100%;/* Ajusta el ancho de la imagen al 100% del contenedor padre */
+                height: 100%; /* Asegura que la imagen cubra toda la altura del contenedor */
+                object-fit: cover;
+                border-radius: 10px;
+              }
+              .TitPelicula{
+                z-index: 10;
+                position: absolute;
+                text-align: center;
+                top: 50%;
+                left: 50%;
+                max-width: 20rem;
+                width: 100%;
+              transform: translateY(-50%) translateX(-50%);
+                h4 {
+                   font-size: 1.6rem;
+                    font-weight: bold;
+                    opacity: 0;
+                    margin-bottom: 0.5rem;
+                    letter-spacing: 0.1rem;
+                    transition: opacity 0.5s ease-in-out;
+  
+                }
+              }
+            }
+          }
+        }
+      }
+    }
 
    }/*Fin Main*/
    
